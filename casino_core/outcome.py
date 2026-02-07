@@ -7,7 +7,6 @@ class Outcome:
         if not isinstance(value, int) or isinstance(value, bool):
             raise InvalidOutcomeError("Outcome must be an integer")
 
-        # range check
         if value < 0 or value > 36:
             raise InvalidOutcomeError("Outcome must be between 0 and 36")
 
